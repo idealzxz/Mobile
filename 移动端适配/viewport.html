@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      setInterval(() => {
+        // 理想视口
+        let sw = screen.height;
+        let sh = screen.width;
+        // 视觉视口
+        let ww = window.innerWidth;
+        let wh = window.innerHeight;
+        let str = `理想视口:宽${sw}高${sh}`;
+        str += `视觉视口:宽${ww}高${wh}`;
+        // console.log(str);
+        let a = sw /ww;
+        console.log(a)
+      }, 1000);
+    </script>
+  </body>
+</html>
